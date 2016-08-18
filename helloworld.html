@@ -1,40 +1,68 @@
-<!DOCTYPE.html>
+<!DOCTYPE html>
 <html>
     <head>
-        <title></title>
-        
-    <script type="text/javascript">
-   
-    function sayhello(){
-        
-    alert ('Hi There')  
+<script type="text/javascript" src="https://code.jquery.com/jquery-2.1.4.min.js"> 
+            </script>
+         
+         <style>
+             #redball{
+                 position:absolute;
+             }
+         </style>
             
-        }
+         <script>
+            function pfadeOut(){
+                var myparagraph=$("#gt");
+                myparagraph.fadeOut();
+            }
+            
+            function pfadeIn(){
+                var myparagraph=$("#gt");
+                myparagraph.fadeIn();
+            }
+            function moveOctagonal(){
+                moveUp() +500, moveUp() +500,moveUp()+500;
+                movediagonaluR()+500,movediagonaluR()+500,movediagonaluR()+500;
+                moveRight()+500,moveRight()+500,moveRight()+500;
+                movediagonaluR()+500,movediagonaluR()+500,movediagonaluR()+500;
+                moveDown()+500,moveDown()+500,moveDown()+500,
+            }
+                     
+        </script>    
         
-        function moveright(){
-         redball.left=redball.left+10;
-    }
-        function moveup() {
-         redball.top = redball.top -10;
-    }   
-        function moveleft() {
-        redball.left = redball.left -10;
-    }
-</script>
-
-<script type="text/javascript" src="https://storage.googleapis.com/ics-redball/redball.js"></script>
-</head>
-<body>
-   
-   <img id="redball" src="http://storage.googleapis.com/ics-redball/redball.jpg"/>
-   
-   <button onclick= "moveright()">moveright</button>
-   <button onclick="alert('Hi There')">Hello World</button>
-   <button onclick="sayhello()">Hello World</button>
-   <button onclick=""> </button>
-
-<h1>Hello World</h1>
-</body>
+    </head>
+            <body>
+                
+            <p id="gt">
+                My first Paragraph
+            </p>
+                
+            <p>
+                My Second Paragraph
+            </p>
+            
+            <p>
+                <button onclick="pfadeOut()">Fade Out</button>
+                <button onclick="pfadeIn()">Fade In</button>
+            </p>
+            
+               <p>
+        <img id="redball" src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png"></img>
+              </p>
+        button onclick="sayhello()">hello worlds</button>
+        <button onclick="moveright()">move right</button>
+        <button onclick="moveleft()">move left</button>
+        <button onclick="moveup()">move up</button>
+        <button onclick="movedown()">move down</button>
+        <button onclick="moveupright()">Move Up Right</button>
+        <button onclick="movedownright()">move down right</button>
+        <button onclick="movedownleft()">move down left</button>
+        <button onclick="movesquare()">move square</button>
+        <button onclick="octagon()">octagon</button>
+        <button onclick="moveupleft()">move up left</button>
+        <button onclick="triangle()">Triangle</button>
+            
+            </body>
 </html>
 
 
